@@ -21,6 +21,8 @@ github.com/Azure/azure-sdk-for-go v31.1.0+incompatible h1:5SzgnfAvUBdBwNTN23WLfZ
 github.com/Azure/azure-sdk-for-go v31.1.0+incompatible/go.mod h1:9XXNKU+eRnpl9moKnB4QOLf1HestfXbmab5FXxiDBjc=
 github.com/Azure/azure-service-bus-go v0.4.1/go.mod h1:d9ho9e/06euiTwGpKxmlbpPhFUsfCsq6a4tZ68r51qI=
 github.com/Azure/azure-storage-blob-go v0.6.0/go.mod h1:oGfmITT1V6x//CswqY2gtAHND+xIP64/qL7a5QJix0Y=
+github.com/Azure/go-autorest v12.2.0+incompatible h1:2Fxszbg492oAJrcvJlgyVaTqnQYRkxmEK6VPCLLVpBI=
+github.com/Azure/go-autorest v12.2.0+incompatible/go.mod h1:r+4oMnoxhatjLLJ6zxSWATqVooLgysK6ZNox3g/xq24=
 github.com/Azure/go-autorest/autorest v0.5.0 h1:Mlm9qy2fpQ9MvfyI41G2Zf5B4CsgjjNbLOWszfK6KrY=
 github.com/Azure/go-autorest/autorest v0.5.0/go.mod h1:9HLKlQjVBH6U3oDfsXOeVc56THsLPw1L03yban4xThw=
 github.com/Azure/go-autorest/autorest/adal v0.2.0 h1:7IBDu1jgh+ADHXnEYExkV9RE/ztOOlxdACkkPRthGKw=
@@ -568,7 +570,7 @@ gomodules.xyz/cert v1.0.0/go.mod h1:amhuI40SpnLj/4dWzsfZyVpblMsfKi0tYH83era8078=
 gomodules.xyz/envsubst v0.0.0-20190321051520-c745d52104af/go.mod h1:2o5f7bd13XIITbE2ZKieE05YkqB2KDoZkqKccGebduA=
 gomodules.xyz/jsonpatch/v2 v2.0.0 h1:OyHbl+7IOECpPKfVK42oFr6N7+Y2dR+Jsb/IiDV3hOo=
 gomodules.xyz/jsonpatch/v2 v2.0.0/go.mod h1:IhYNNY4jnS53ZnfE4PAmpKtDpTCj1JFXc+3mwe7XcUU=
-gomodules.xyz/stow v0.2.0 h1:YL2QID9eO5FoNYIh+F56SCwBS3L57xlyqqABipCEZoA=
+gomodules.xyz/stow v0.2.0 h1:7yEz3Mu3V96xhfjfuk62oZpkwTXDWB6cRVwqHuBtoog=
 gomodules.xyz/stow v0.2.0/go.mod h1:nSTw1H1Gb/GktlrUgElN4YR+jww9OcNsxxrx3zNp+qA=
 gomodules.xyz/version v0.0.0-20190507203204-7cec7ee542d3 h1:MiBtMikyjuBwD22+QIEsbnMHdRkknM/0N5ig34jSNgQ=
 gomodules.xyz/version v0.0.0-20190507203204-7cec7ee542d3/go.mod h1:Y8xuV02mL/45psyPKG3NCVOwvAOy6T5Kx0l3rCjKSjU=
