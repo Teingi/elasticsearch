@@ -117,7 +117,7 @@ func (c *Controller) ensureStatefulSet(
 								"sh",
 								"-c",
 								fmt.Sprintf(`#!/usr/bin/env bash -e
-# If the node is starting up wait for the cluster to be ready (request params: 'wait_for_status=green&timeout=1s' )
+# If the node is starting up wait for the cluster to be ready (request params: 'timeout=1s' )
 # Once it has started only check that the node itself is responding
 START_FILE=/tmp/.es_start_file
 
@@ -135,12 +135,12 @@ if [ -f "${START_FILE}" ]; then
     echo 'Elasticsearch is already running, lets check the node is healthy'
     http "/"
 else
-    echo 'Waiting for elasticsearch cluster to become cluster to be ready (request params: "wait_for_status=green&timeout=1s" )'
-    if http "/_cluster/health?wait_for_status=green&timeout=1s" ; then
+    echo 'Waiting for elasticsearch cluster to become cluster to be ready (request params: "timeout=1s" )'
+    if http "/_cluster/health?timeout=1s" ; then
         touch ${START_FILE}
         exit 0
     else
-        echo 'Cluster is not yet ready (request params: "wait_for_status=green&timeout=1s" )'
+        echo 'Cluster is not yet ready (request params: "timeout=1s" )'
         exit 1
     fi
 fi`,elasticsearch.GetConnectionScheme()),
@@ -150,7 +150,7 @@ fi`,elasticsearch.GetConnectionScheme()),
 					FailureThreshold: 3,
 					PeriodSeconds:    10,
 					SuccessThreshold: 1,
-					TimeoutSeconds:   5,
+					TimeoutSeconds:   2,
 				},
 				Lifecycle:      elasticsearch.Spec.PodTemplate.Spec.Lifecycle,
 			})
